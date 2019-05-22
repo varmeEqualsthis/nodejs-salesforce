@@ -18,15 +18,15 @@ exports.updateStatus = function(event,context,callback){
 }
 
 function updatePIRStatus(pirData){
-  var username = 'integration1@merck.com.hhusd15';
-  var password = 'MRKp@ssw0rd0072JoBejcflDhEZFjBw2nyxHF8';
+  var username = '**********';
+  var password = '**********';
 
   var conn = new jsforce.Connection({
     oauth2 : {
       // you can change loginUrl to connect to sandbox or prerelease env.
       loginUrl : 'https://test.salesforce.com',
-      clientId : '3MVG9zZht._ZaMunIw02Zmy.qM8Q3xMYMlER6B_4RchwkAlQKPFzGKwDRCOLFTIr8IS3wfrIKyg3zCYKSkIux',
-      clientSecret : '1959802284468702395',
+      clientId : '**************************',
+      clientSecret : '************************',
       redirectUri : 'https://test.salesforce.com'
     }
   });
